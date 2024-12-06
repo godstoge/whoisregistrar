@@ -81,7 +81,7 @@ class NICClient(object):
     MX_HOST = "whois.mx"
     NICHOST = "whois.crsnic.net"
     NL_HOST = "whois.domain-registry.nl"
-    NORIDHOST = "whois.norid.no"
+    NORIDHOST = "registrarwhois.norid.no"
     ONLINE_HOST = "whois.nic.online"
     OOO_HOST = "whois.nic.ooo"
     PAGE_HOST = "whois.nic.page"
@@ -334,6 +334,8 @@ class NICClient(object):
             return NICClient.MX_HOST
         elif tld == "nl":
             return NICClient.NL_HOST
+        elif tld == "no":
+            return NICClient.NORIDHOST
         elif tld == "online":
             return NICClient.ONLINE_HOST
         elif tld == "ooo":

@@ -2995,6 +2995,15 @@ class WhoisNo(WhoisEntry):
         "domain_name": r"Domain Name.*:\s*(.+)",
         "creation_date": r"Additional information:\nCreated:\s*(.+)",
         "updated_date": r"Additional information:\n(?:.*\n)Last updated:\s*(.+)",
+	    "postal_code": r"Postal Code.*:\s*(.+)",
+	    "postal_area": r"Postal Area.*:\s*(.+)",
+	    "postal_adr": r"Post Address.*:\s*(.+)",
+	    "org_name": r"Organization Name.*:\s*(.+)",
+	    "org_orgnr": r"Id Number.*:\s*(.+)",
+	    "contact_name": r"organization\nName.*:\s*(.+)",
+	    "contact_phone": r"Phone Number.*:\s*(.+)",
+	    "contact_email": r"Email Address.*:\s*(.+)",
+
     }
 
     def __init__(self, domain, text):
